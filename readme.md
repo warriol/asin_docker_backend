@@ -30,3 +30,16 @@ docker build -t asin_docker:1.0 .
 docker-compose up
 # docker-compose up -d
 ```
+
+## reconstruir imagen docker
+```bash
+./mvnw clean
+sleep 10
+
+./mvnw clean package -DskipTests
+sleep 20
+
+docker build -t asin_docker:1.0 .
+sleep 20
+docker-compose up
+```

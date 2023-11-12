@@ -1,0 +1,3 @@
+Aquí se implementan los métodos que se van a utilizar en el controlador.
+Se implementan los respositorios.
+No se trata del endpoint final, sino de una capa intermediaria entre el restcontroller y la base de datos
