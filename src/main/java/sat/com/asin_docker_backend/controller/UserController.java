@@ -57,5 +57,11 @@ public class UserController {
         }
     }
 
+    @GetMapping("/extractExpiration")
+    @PreAuthorize("hasAnyRole('ROLE_USER','ROLE_ADMIN')")
+    public String extractExpiration(@RequestBody String token) {
+        return jwtService.extractExpiration(token).toString();
+    }
+
 }
 
